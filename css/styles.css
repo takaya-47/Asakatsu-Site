@@ -1,0 +1,1770 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ここからheader */
+
+header {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color: #fafdff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(45deg, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0.8) 1%, rgba(192, 192, 192, 0.8));
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  margin: 5px;
+  text-align: center;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+header a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 18px;
+  transition: all 1s;
+}
+
+header a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* ここまでheader */
+
+/* ここからfooter */
+
+footer {
+  text-align: center;
+  background-color: #1a1a1a;
+  margin: 40px 0;
+}
+
+footer p {
+  font-size: 14px;
+  padding: 10px;
+  color: white;
+}
+
+/* ここまでfooter */
+
+/* ここからnav */
+
+nav .nav-container {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url(../css/alarm-clock-4568283_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 35px;
+  display: none;
+}
+
+nav li {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  display: none;
+}
+
+nav p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  display: none;
+}
+
+/* ここまでnav */
+
+/* ここからintro */
+
+intro h1, ol, p {
+  margin: 0;
+  padding: 0;
+}
+
+intro h1 {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+intro h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+intro .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+.purpose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+intro .container .one {
+  order: 1;
+}
+
+intro .container .three {
+  order: -1;
+}
+
+.purpose li {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.purpose img {
+  width: 80%;
+  height: 400px;
+}
+
+.purpose p {
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ここまでintro */
+
+/* ここからmain */
+
+main>h1 {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+main ul {
+  margin: 0px auto;
+  border: 3px double #1a1a1a;
+  width: 80%;
+}
+
+main ul li {
+  margin: 5px;
+}
+
+main ul li span {
+  color: red;
+  font-weight: bold;
+}
+
+main .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .container .feature .desc .title h1 {
+  font-size: 15px;
+  display: inline-block;
+  background-color: #0000ff;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0;
+}
+
+main .container .feature .desc h2 {
+  margin: 0;
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin: 10px;
+  border-bottom: 4px solid #0000ff;
+}
+
+main .container .feature {
+  margin-bottom: 40px;
+}
+
+main .container .feature .pic {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+main .container .feature .pic .scrollAnime {
+  opacity: 0;
+}
+
+main .container .feature .pic .fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+main .container .feature .pic .scrollAnime.slide-right {
+  transform: translateX(200px);
+}
+
+main .container .feature .pic .scrollAnime.slide-left {
+  transform: translateX(-200px);
+}
+
+main .container .feature .pic .scrollAnime.slide-top {
+  transform: translateY(200px);
+}
+
+main .container .feature .pic .scrollAnime.slide-bottom {
+  transform: translateY(-200px);
+}
+
+/* ここまでmain */
+
+/* ここからtips */
+
+tips h1 {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+tips h2 {
+  margin: 0;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 18px;
+  width: 80%;
+}
+
+tips .tab-container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+tips .tab-menu {
+  display: flex;
+  font-size: 18px;
+}
+
+tips .tab-menu li a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+tips .tab-menu li a:not(.active):hover {
+  opacity: 0.8;
+  transition: opacity 0.4s;
+}
+
+tips .tab-menu li a.active {
+  background: #efefef;
+}
+
+tips section.content {
+  display: none;
+  padding: 10px;
+  min-height: 480px;
+}
+
+tips section.content.active {
+  background: linear-gradient(180deg, #efefef, white);
+  display: block;
+}
+
+tips section li {
+  padding: 4px;
+  list-style: inside square;
+}
+
+/* ここまでtips */
+
+/* ここからgoogle map */
+
+.map h1 {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.map h2 {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.map #target {
+  margin: 0 auto;
+  width: 80%;
+  height: 400px;
+}
+
+/* ここまでgoogle map */
+
+/* ここから問合せフォーム */
+
+.contact-form h1 {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form p {
+  margin-bottom: 10px;
+}
+
+.form #name, #mail, #text {
+  margin-bottom: 10px;
+  border: 2px solid #dadada;
+}
+
+.form #name, #mail {
+  width: 60%;
+  height: 20px;
+}
+
+.form #text {
+  width: 70%;
+  max-width: 80%;
+}
+
+.form #submit {
+  width: 140px;
+  height: 60px;
+  padding: 15px;
+  background-color: #1a1a1a;
+  font-size: 18px;
+  color: white;
+}
+
+.form #submit:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+form.cmxform label.error, label.error {
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ここまで問合せフォーム */
+
+/* ここからTwitter */
+
+.tw-container {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.tw-container h1 {
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.tw-container h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.twitter {
+  text-align: center;
+}
+
+/* ここまでtwitter */
+
+/* ここからモーダルウィンドウ用シェアボタン */
+
+.open {
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #dadada;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+}
+
+.open:hover {
+  background-color: #00afcc;
+}
+
+.my-color {
+  color: white;
+}
+
+/* ここまでモーダルウィンドウ用シェアボタン */
+
+/* ここからモーダルウィンドウ */
+
+#mask {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal {
+  position: fixed;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50%;
+  height: 350px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #00afcc, #ea5532);
+  padding: 15px;
+  transition: transform 0.4s;
+  z-index: 2;
+}
+
+#modal.hidden {
+  transform: translate(0, -800px);
+}
+
+.modal-close {
+  height: 5%;
+  font-size: 20px;
+  text-align: right;
+}
+
+.fas.fa-times {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.modal-title {
+  height: 20%;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: white;
+  line-height: 90px;
+}
+
+.modal-message {
+  height: 45%;
+  overflow: hidden;
+}
+
+.modal-message p {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: white;
+  line-height: 180px;
+  width: 400px;
+  animation-name: slideIn;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: 100%;
+  }
+  50% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+
+.modal-icon {
+  height: 30%;
+  line-height: 130px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.twitter-link {
+  display: inline-block;
+  background-color: #3ab4ff;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 5px;
+}
+
+.my-twitter-color {
+  color: white;
+}
+
+/* ここまでモーダルウィンドウ */
+
+/* ここからtopへ戻るボタン */
+
+.top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: block;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #dadada;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+}
+
+.top:hover {
+  background-color: #ea5532;
+}
+
+/* ここまでtopへ戻るボタン */
+
+
+
+
+
+/* ここからmedium scale */
+
+@media (min-width: 600px) {
+  /* ここからheader */
+  header {
+    height: auto;
+    width: 100%;
+    color: #fafdff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(45deg, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0.8) 1%, rgba(192, 192, 192, 0.8));
+  }
+
+  .header-container {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 30px;
+    width: 40%;
+  }
+
+  header ul {
+    width: 60%;
+  }
+
+  header a {
+    display: block;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 18px;
+    transition: all 1s;
+  }
+
+  header a:hover {
+    color: red;
+    cursor: pointer;
+  }
+  /* ここまでheader */
+
+  /* ここからfooter */
+  footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    margin: 40px 0;
+  }
+  footer p {
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+  }
+  /* ここまでfooter */
+
+  /* ここからnav */
+  nav .nav-container {
+    height: auto;
+    width: 80%;
+    background-image: url(../css/alarm-clock-4568283_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    padding: 20px;
+  }
+
+  nav h1 {
+    margin: 0;
+    font-size: 45px;
+    display: none;
+  }
+
+  nav li {
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+    display: none;
+  }
+
+  nav p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    display: none;
+  }
+  /* ここまでnav */
+
+  /* ここからintro */
+  intro h1, ol, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  intro h1 {
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  intro h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  intro .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #fafafa;
+    width: 80%;
+    height: auto;
+  }
+
+  .purpose {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  intro .container .one {
+    order: 1;
+  }
+
+  intro .container .three {
+    order: -1;
+  }
+
+  .purpose li {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .purpose img {
+    width: 70%;
+    height: auto;
+  }
+
+  .purpose p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin: 10px;
+  }
+  /* ここまでintro */
+
+  /* ここからmain */
+  main h1 {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  main ul {
+    margin: 0px auto;
+    border: 3px double #1a1a1a;
+    width: 90%;
+  }
+
+  main ul li {
+    margin: 5px;
+  }
+
+  main ul li span {
+    color: red;
+    font-weight: bold;
+  }
+
+  main .container .feature .desc .title h1 {
+    margin: 0;
+    font-size: 15px;
+    display: inline-block;
+    background-color: #0000ff;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  main .container .feature .desc h2 {
+    margin: 0;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin: 10px;
+    border-bottom: 4px solid #0000ff;
+  }
+
+  main .container .feature {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+
+  main .container .feature .desc {
+    width: 100%;
+    height: auto;
+  }
+
+  main .container .feature .pic {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  main .container .feature .pic .scrollAnime {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+  }
+
+  main .container .feature .pic .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  main .container .feature .pic .scrollAnime.slide-right {
+    transform: translateX(200px);
+  }
+
+  main .container .feature .pic .scrollAnime.slide-left {
+    transform: translateX(-200px);
+  }
+
+  main .container .feature .pic .scrollAnime.slide-top {
+    transform: translateY(200px);
+  }
+
+  main .container .feature .pic .scrollAnime.slide-bottom {
+    transform: translateY(-200px);
+  }
+  /* ここまでmain */
+
+  /* ここからtips */
+  tips h1 {
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  tips h2 {
+    margin: 0;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 18px;
+    width: 80%;
+  }
+
+  tips .tab-container {
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  tips .tab-menu {
+    display: flex;
+    font-size: 20px;
+  }
+
+  tips .tab-menu li a {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+  }
+
+  tips .tab-menu li a:not(.active):hover {
+    opacity: 0.8;
+    transition: opacity 0.4s;
+  }
+
+  tips .tab-menu li a.active {
+    background: #efefef;
+  }
+
+  tips section.content {
+    display: none;
+    padding: 10px;
+    min-height: 300px;
+  }
+
+  tips section.content.active {
+    background: linear-gradient(180deg, #efefef, white);
+    display: block;
+  }
+
+  tips section li {
+    padding: 4px;
+    list-style: inside square;
+  }
+  /* ここまでtips */
+
+  /* ここからgoogle map */
+  .map h1 {
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .map h2 {
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .map #target {
+    margin: 0 auto;
+    height: 500px;
+  }
+  /* ここまでgoogle map */
+
+  /* ここから問合せフォーム */
+  .contact-form h1 {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .form p {
+    margin-bottom: 10px;
+  }
+
+  .form #name, #mail, #text {
+    margin-bottom: 15px;
+    border: 2px solid #dadada;
+  }
+
+  .form #name, #mail {
+    width: 50%;
+    height: 20px;
+  }
+
+  .form #text {
+    width: 60%;
+    max-width: 80%;
+  }
+
+  .form #submit {
+    width: 140px;
+    height: 60px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    font-size: 18px;
+    color: white;
+  }
+  .form #submit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  form.cmxform label.error, label.error {
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* ここまで問合せフォーム */
+
+  /* ここからTwitter */
+  .tw-container {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .tw-container h1 {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  .tw-container h2 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .twitter {
+    text-align: center;
+  }
+  /* ここまでtwitter */
+  /* ここからモーダルウィンドウ用シェアボタン */
+  .open {
+    position: fixed;
+    right: 40px;
+    bottom: 120px;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    background-color: #dadada;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+  }
+  .open:hover {
+    background-color: #00afcc;
+  }
+  .my-color {
+    color: white;
+  }
+  /* ここまでモーダルウィンドウ用シェアボタン */
+  /* ここからモーダルウィンドウ */
+  #mask {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #mask.hidden {
+    display: none;
+  }
+  #modal {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #00afcc, #ea5532);
+    padding: 15px;
+    transition: transform 0.4s;
+    z-index: 2;
+  }
+  #modal.hidden {
+    transform: translate(0, -800px);
+  }
+  .modal-close {
+    height: 5%;
+    font-size: 20px;
+    text-align: right;
+  }
+  .fas.fa-times {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .modal-title {
+    height: 20%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+    line-height: 90px;
+  }
+  .modal-message {
+    height: 45%;
+    overflow: hidden;
+  }
+  .modal-message p {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+    line-height: 180px;
+    width: 400px;
+    animation-name: slideIn;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  @keyframes slideIn {
+    0% {
+      margin-left: 100%;
+    }
+    50% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -100%;
+    }
+  }
+  .modal-icon {
+    height: 30%;
+    line-height: 130px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .twitter-link {
+    display: inline-block;
+    background-color: #3ab4ff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 5px;
+  }
+  .my-twitter-color {
+    color: white;
+  }
+  /* ここまでモーダルウィンドウ */
+  /* ここからtopへ戻るボタン */
+  .top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: block;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    background-color: #dadada;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+  }
+  .top:hover {
+    background-color: #ea5532;
+  }
+  /* ここまでtopへ戻るボタン */
+}
+
+/* ここまでmedium scale */
+
+
+
+
+
+/* ここからlarge scale */
+
+@media (min-width: 1200px) {
+  /* ここからheader */
+  header {
+    height: 60px;
+    width: 100%;
+    color: #fafdff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(45deg, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0.8) 1%, rgba(192, 192, 192, 0.8));
+  }
+
+  .header-container {
+    display: flex;
+    margin: 0 200px;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 60px;
+    width: 30%;
+  }
+
+  header ul {
+    display: flex;
+    width: 70%;
+  }
+
+  header a {
+    display: block;
+    line-height: 60px;
+    padding: 0 30px;
+    margin: 0;
+    font-size: 18px;
+    transition: all 1s;
+  }
+
+  header a:hover {
+    color: red;
+    cursor: pointer;
+  }
+  /* ここまでheader */
+
+  /* ここからfooter */
+  footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    margin: 40px 0;
+  }
+  footer p {
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+  }
+  /* ここまでfooter */
+
+  /* ここからnav */
+  nav .nav-container {
+    height: auto;
+    width: 80%;
+    background-image: url(../css/alarm-clock-4568283_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  nav h1 {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 80px;
+    display: none;
+  }
+  nav li {
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+    display: none;
+  }
+  nav p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 35px;
+    display: none;
+  }
+  /* ここまでnav */
+
+  /* ここからintro */
+  intro h1, ol, p {
+    margin: 0;
+    padding: 0;
+  }
+  intro h1 {
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  intro h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: left;
+  }
+
+  intro .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fafafa;
+    padding: 10px;
+  }
+
+  .purpose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+  }
+
+  intro .container .one {
+    order: 1;
+  }
+
+  intro .container .three {
+    order: -1;
+  }
+
+  .purpose li {
+    font-size: 20px;
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .purpose img {
+    width: 60%;
+    height: 500px;
+  }
+
+  .purpose p {
+    width: 80%;
+    text-align: center;
+    margin: 0;
+    margin: 10px;
+  }
+  /* ここまでintro */
+
+  /* ここからmain */
+  main h1 {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  main ul {
+    margin: 0px auto;
+    width: 80%;
+    border: 3px double #1a1a1a;
+  }
+
+  main ul li {
+    margin: 5px;
+  }
+
+  main ul li span {
+    color: red;
+    font-weight: bold;
+  }
+
+  main .container .feature .desc .title h1 {
+    margin: 0;
+    font-size: 15px;
+    display: inline-block;
+    background-color: #0000ff;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  main .container .feature .desc h2 {
+    margin: 0;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin: 10px;
+    border-bottom: 4px solid #0000ff;
+  }
+
+  main .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  main .container .feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    height: 500px;
+  }
+
+  main .container .feature:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  main .container .feature .desc {
+    width: 45%;
+    height: 100%;
+  }
+
+  main .container .feature .pic {
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  main .container .feature .pic .scrollAnime {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+  }
+
+  main .container .feature .pic .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  main .container .feature .pic .scrollAnime.slide-right {
+    transform: translateX(200px);
+  }
+
+  main .container .feature .pic .scrollAnime.slide-left {
+    transform: translateX(-200px);
+  }
+
+  main .container .feature .pic .scrollAnime.slide-top {
+    transform: translateY(200px);
+  }
+
+  main .container .feature .pic .scrollAnime.slide-bottom {
+    transform: translateY(-200px);
+  }
+  /* ここまでmain */
+
+  /* ここからtips */
+  tips h1 {
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  tips h2 {
+    margin: 0;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  tips .tab-container {
+    margin: 20px auto;
+  }
+
+  tips .tab-menu {
+    display: flex;
+    font-size: 25px;
+  }
+
+  tips .tab-menu li a {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+  }
+
+  tips .tab-menu li a:not(.active):hover {
+    opacity: 0.8;
+    transition: opacity 0.4s;
+  }
+
+  tips .tab-menu li a.active {
+    background: #efefef;
+  }
+
+  tips section.content {
+    display: none;
+    padding: 10px;
+    min-height: 300px;
+  }
+
+  tips section.content.active {
+    background: linear-gradient(180deg, #efefef, white);
+    display: block;
+  }
+
+  tips section li {
+    padding: 4px;
+    list-style: inside square;
+  }
+  /* ここまでtips */
+
+  /* ここからgoogle map */
+  .map h1 {
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  .map h2 {
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .map #target {
+    margin: 0 auto;
+    height: 500px;
+    width: 80%;
+  }
+  /* ここまでgoogle map */
+  
+  
+  /* ここから問合せフォーム */
+  .contact-form h1 {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .form p {
+    margin-bottom: 10px;
+  }
+
+  .form #name, #mail, #text {
+    margin-bottom: 10px;
+    border: 2px solid #dadada;
+  }
+
+  .form #name, #mail {
+    width: 270px;
+    height: 20px;
+  }
+
+  .form #text {
+    width: 40%;
+    max-width: 50%;
+  }
+
+  .form #submit {
+    width: 140px;
+    height: 60px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    font-size: 18px;
+    color: white;
+  }
+  .form #submit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  form.cmxform label.error, label.error {
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* ここまで問合せフォーム */
+
+  /* ここからTwitter */
+  .tw-container {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .tw-container h1 {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  
+  .tw-container h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+  }
+  .twitter {
+    text-align: center;
+  }
+  /* ここまでtwitter */
+  /* ここからモーダルウィンドウ用シェアボタン */
+  .open {
+    position: fixed;
+    right: 40px;
+    bottom: 120px;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    background-color: #dadada;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+  }
+  .open:hover {
+    background-color: #00afcc;
+  }
+  .my-color {
+    color: white;
+  }
+  /* ここまでモーダルウィンドウ用シェアボタン */
+  /* ここからモーダルウィンドウ */
+  #mask {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #mask.hidden {
+    display: none;
+  }
+  #modal {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #00afcc, #ea5532);
+    padding: 15px;
+    transition: transform 0.4s;
+    z-index: 2;
+  }
+  #modal.hidden {
+    transform: translate(0, -800px);
+  }
+  .modal-close {
+    height: 5%;
+    font-size: 20px;
+    text-align: right;
+  }
+  .fas.fa-times {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .modal-title {
+    height: 20%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+    line-height: 90px;
+  }
+  .modal-message {
+    height: 45%;
+    overflow: hidden;
+  }
+  .modal-message p {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+    line-height: 180px;
+    width: 400px;
+    animation-name: slideIn;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  @keyframes slideIn {
+    0% {
+      margin-left: 100%;
+    }
+    50% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -100%;
+    }
+  }
+  .modal-icon {
+    height: 30%;
+    line-height: 130px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .twitter-link {
+    display: inline-block;
+    background-color: #3ab4ff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 5px;
+  }
+  .my-twitter-color {
+    color: white;
+  }
+  /* ここまでモーダルウィンドウ */
+  /* ここからtopへ戻るボタン */
+  .top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: block;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    background-color: #dadada;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+  }
+  .top:hover {
+    background-color: #ea5532;
+  }
+  /* ここまでtopへ戻るボタン */
+}
+
+/* ここまでlarge scale */
