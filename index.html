@@ -24,7 +24,6 @@
         <li><a class="menu-merits">Merits</a></li>
         <li><a class="menu-tips">Tips</a></li>
         <li><a class="menu-spots">Spots</a></li>
-        <li><a class="menu-contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -187,108 +186,7 @@
     <h2>長野県で朝活するのに適したスポットをいくつか紹介します。どこもWi-Fi、電源完備なのでパソコンと充電コードだけ持っていけば作業できます。なお、現金を持ちたくない方のため、キャッシュレス対応の状況も記載しています。
     </h2>
     <div id="target"></div>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyCLctF4xbJoHfzanhR2b01nXESSfsVqGzo&callback=initMap&libraries=places"
-      async defer></script>
-    <script>
-      function initMap() {
-        'use strict';
 
-        let target = document.getElementById('target');
-        let map;
-        let marker;
-        let infoWindow;
-
-        map = new google.maps.Map(target, {
-          center: { lat: 36.6444757, lng: 138.1886261 },
-          zoom: 14,
-        });
-
-        marker = new google.maps.Marker({
-          position: { lat: 36.6546096, lng: 138.2251302 },
-          map: map,
-          title: '元町珈琲 長野東和田の離れ',
-          animation: google.maps.Animation.DROP
-        });
-
-        infoWindow = new google.maps.InfoWindow({
-          position: { lat: 36.6546096, lng: 138.2251302 },
-          content: 'キャッシュレス対応済み'
-        });
-        infoWindow.open(map);
-
-        marker = new google.maps.Marker({
-          position: { lat: 36.6542326, lng: 138.2259763 },
-          map: map,
-          title: 'コメダ珈琲店 長野東和田店',
-          animation: google.maps.Animation.DROP
-        });
-
-        infoWindow = new google.maps.InfoWindow({
-          position: { lat: 36.6542326, lng: 138.2259763 },
-          content: 'キャッシュレス対応済み'
-        });
-        marker = new google.maps.Marker({
-          position: { lat: 36.2704623, lng: 137.9320956 },
-          map: map,
-          title: 'スターバックスコーヒー梓川サービスエリア上り線店',
-          animation: google.maps.Animation.DROP
-        });
-
-        infoWindow = new google.maps.InfoWindow({
-          position: { lat: 36.2704623, lng: 137.9320956 },
-          content: 'キャッシュレス対応済み'
-        });
-
-        marker = new google.maps.Marker({
-          position: { lat: 36.658791, lng: 138.187658 },
-          map: map,
-          title: 'スターバックス コーヒー 信州善光寺仲見世通り店',
-          animation: google.maps.Animation.DROP
-        });
-
-        infoWindow = new google.maps.InfoWindow({
-          position: { lat: 36.658791, lng: 138.187658 },
-          content: 'キャッシュレス対応済み'
-        });
-
-        infoWindow.open(map);
-      }
-    </script>
-  </section>
-
-  <section class="contact-form">
-    <h1><i class="fas fa-apple-alt faa-ring animated"></i> Contact</h1>
-    <div class="contact">
-      <form>
-        <div class="form">
-          <label for="name">
-            <p>お名前（必須）</p>
-            <input type="text" name="name" id="name" placeholder="例）山田　太郎">
-            <span class="nameError"></span>
-          </label>
-        </div>
-        <div class="form">
-          <label for="mail">
-            <p>メールアドレス（必須）</p>
-            <input type="text" name="mail" id="mail" placeholder="例）email@asakatsu.co.jp">
-            <span class="mailError"></span>
-          </label>
-        </div>
-        <div class="form">
-          <label for="text">
-            <p>お問い合わせ内容（必須）</p>
-            <textarea cols="30" rows="10" name="text" id="text" placeholder="お問い合わせ内容を入力してください"></textarea>
-            <span class="textError"></span>
-          </label>
-        </div>
-        <div class="form">
-          <label for="submit">
-            <input type="submit" id="submit" value="送信する">
-          </label>
-        </div>
-      </form>
-    </div>
   </section>
 
   <section>
@@ -296,12 +194,12 @@
       <div class="follow">
         <h1><i class="fab fa-twitter faa-bounce animated"></i> Twitter</h1>
         <h2>
-          仕事をしながらプログラミング、筋トレ、読書、ファッションなどに関する知識を共有しています。また、朝活や夕活の内容などもつぶやいていますので、モチベーションが続かない方、一人では継続できない方、一緒に朝活を通して人生を前に進めていきましょう。
+          仕事をしながら主にプログラミングに関する知識を共有しています。モチベーションが続かない方、一人では継続できない方、一緒に朝活を通して人生を前に進めていきましょう。
         </h2>
       </div>
       <div class="twitter">
         <a class="twitter-timeline" data-lang="ja" data-width="400" data-height="400" data-chrome="nofooter noheader"
-          href="https://twitter.com/takaya_tera4ma?ref_src=twsrc%5Etfw" target="_blank"></a>
+          href="https://twitter.com/@4ma9147?ref_src=twsrc%5Etfw" target="_blank"></a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
@@ -321,7 +219,7 @@
       <p>Follow Me!!</p>
     </div>
     <div class="modal-icon">
-      <a href="https://twitter.com/takaya_tera4ma" target="_blank" class="twitter-link"><i
+      <a href="https://twitter.com/@4ma9147" target="_blank" class="twitter-link"><i
           class="fab fa-twitter my-twitter-color"></i></a>
     </div>
   </section>
@@ -333,6 +231,101 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyCLctF4xbJoHfzanhR2b01nXESSfsVqGzo&callback=initMap&libraries=places"
+    async defer></script>
+  <script>
+    function initMap() {
+      'use strict';
+
+      let target = document.getElementById('target');
+      let map;
+      let marker;
+      let infoWindow;
+
+      map = new google.maps.Map(target, {
+        center: {
+          lat: 36.6444757,
+          lng: 138.1886261
+        },
+        zoom: 14,
+      });
+
+      marker = new google.maps.Marker({
+        position: {
+          lat: 36.6546096,
+          lng: 138.2251302
+        },
+        map: map,
+        title: '元町珈琲 長野東和田の離れ',
+        animation: google.maps.Animation.DROP
+      });
+
+      infoWindow = new google.maps.InfoWindow({
+        position: {
+          lat: 36.6546096,
+          lng: 138.2251302
+        },
+        content: 'キャッシュレス対応済み'
+      });
+      infoWindow.open(map);
+
+      marker = new google.maps.Marker({
+        position: {
+          lat: 36.6542326,
+          lng: 138.2259763
+        },
+        map: map,
+        title: 'コメダ珈琲店 長野東和田店',
+        animation: google.maps.Animation.DROP
+      });
+
+      infoWindow = new google.maps.InfoWindow({
+        position: {
+          lat: 36.6542326,
+          lng: 138.2259763
+        },
+        content: 'キャッシュレス対応済み'
+      });
+      marker = new google.maps.Marker({
+        position: {
+          lat: 36.2704623,
+          lng: 137.9320956
+        },
+        map: map,
+        title: 'スターバックスコーヒー梓川サービスエリア上り線店',
+        animation: google.maps.Animation.DROP
+      });
+
+      infoWindow = new google.maps.InfoWindow({
+        position: {
+          lat: 36.2704623,
+          lng: 137.9320956
+        },
+        content: 'キャッシュレス対応済み'
+      });
+
+      marker = new google.maps.Marker({
+        position: {
+          lat: 36.658791,
+          lng: 138.187658
+        },
+        map: map,
+        title: 'スターバックス コーヒー 信州善光寺仲見世通り店',
+        animation: google.maps.Animation.DROP
+      });
+
+      infoWindow = new google.maps.InfoWindow({
+        position: {
+          lat: 36.658791,
+          lng: 138.187658
+        },
+        content: 'キャッシュレス対応済み'
+      });
+
+      infoWindow.open(map);
+    }
+  </script>
 </body>
 
 </html>
